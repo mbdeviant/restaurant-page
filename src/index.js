@@ -1,1 +1,3 @@
-console.log('just making sure everything\'s under control');
+import pageLoad from "./init";
+
+pageLoad();
