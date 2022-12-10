@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.header {
+    height: 50px;
+    padding:  0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header > h3 {
+    font-size: 24px;
+    color: white;
+}
+h3:hover{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    gap: 14px;
+}
+
+.nav-button{
+    font-size: 14px;
+    color: white;
+    border: transparent;
+    background-color: transparent;
+}
+.nav-button:hover{
+    cursor: pointer;
+}
