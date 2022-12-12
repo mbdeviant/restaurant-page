@@ -3,11 +3,11 @@ function createHeader() {
     header.classList.add('header');
 
     const title = document.createElement('h1');
-    title.textContent = 'coffee&coffee'
-    header.appendChild(title)
+    title.textContent = 'coffee&coffee';
+    header.appendChild(title);
     header.appendChild(navBar());
 
-    return header
+    return header;
 }
 
 function navBar() {
@@ -42,7 +42,7 @@ function navBar() {
 }
 
 function home() {
-    const container = document.createElement('div')
+    const container = document.createElement('div');
     container.classList.add('home-container');
 
     const title = document.createElement('h3');
@@ -53,9 +53,15 @@ function home() {
     text.classList.add('home-text');
     text.innerHTML = `is usually a cup of coffee. <br> When you wake up, <br> while working,<br>or with a friend.<br>
                       So make it count, <br> with coffee&coffee.`
+    
+    const button = document.createElement('button');
+    button.classList.add('home-button');
+    button.textContent = 'Visit Store';
+
 
     container.appendChild(title);
     container.appendChild(text);
+    container.appendChild(button);
     //add a button href to store
 
 
