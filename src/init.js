@@ -1,3 +1,6 @@
+import createHome from "./home";
+import createAbout from "./about";
+
 function createHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -17,11 +20,19 @@ function navBar() {
     home.classList.add('nav-button');
     home.setAttribute('id', 'home-button');
     home.textContent = 'Home';
+    home.addEventListener('click',()=>{
+        document.body.style.backgroundImage = "url('img/background.jpg')";
+        createHome();
+    });
 
     const about = document.createElement('button');
     about.classList.add('nav-button');
     about.setAttribute('id', 'about-button');
     about.textContent = 'About';
+    about.addEventListener('click',()=>{
+        document.body.style.backgroundImage = "url('img/about-background.jpg')";
+        createAbout();
+    })
 
     const store = document.createElement('button');
     store.classList.add('nav-button');
@@ -41,42 +52,25 @@ function navBar() {
     return nav;
 }
 
-function home() {
+function createContainer (){
     const container = document.createElement('div');
-    container.classList.add('home-container');
-
-    const title = document.createElement('h3');
-    title.classList.add('home-title');
-    title.textContent = 'YOUR BEST COMPANION';
-
-    const text = document.createElement('p');
-    text.classList.add('home-text');
-    text.innerHTML = `is usually a cup of coffee. <br> When you wake up, <br> while working,<br>or with a friend.<br>
-                      So make it count, <br> with coffee&coffee.`
-    
-    const button = document.createElement('button');
-    button.classList.add('home-button');
-    button.textContent = 'Visit Store';
-
-
-    container.appendChild(title);
-    container.appendChild(text);
-    container.appendChild(button);
-    //add a button href to store
-
+    container.setAttribute('id', 'container');
 
     return container;
 }
 
 
-function pageLoad() {
+export default function pageLoad() {
     const content = document.getElementById('content');
+    
     content.appendChild(createHeader());
-    content.appendChild(home());
-
+    content.appendChild(createContainer());
+    createHome();
+    
 }
 
 
-export default pageLoad;
+
+
 
 
