@@ -8,9 +8,13 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+#container{
+    display: flex;
+    flex-direction: column;    
+}
 
 .header {
-    height: 100px;
+    height: 130px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -20,12 +24,13 @@ body {
 
 .header>h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 39px;
+    font-size: 50px;
     color: white;
 }
 
 h1:hover {
     cursor: pointer;
+    user-select: none;
 }
 
 nav {
@@ -35,7 +40,7 @@ nav {
 
 .nav-button {
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     color: rgba(255, 255, 255, 0.7);
     border: transparent;
     background-color: transparent;
@@ -53,7 +58,7 @@ nav {
     transition: 0.3s;
 }
 
-.nav-button:hover:after {
+.nav-button:hover::after {
     width: 100%;
 }
 
@@ -69,28 +74,46 @@ nav {
     color: white;
     padding: 20px 20px;
 }
-.home-button{
+
+.home-button {
+    
     width: fit-content;
-    padding: 15px;
+    padding: 7px;
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     color: white;
-    border-color: white;
     background-color: transparent;
+    border-color: transparent;
+    transition: 0.5s;
+}
+
+.home-button:hover {
+    border-color: white;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 .home-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .home-text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
 }
 
-.home-container:hover {
+.home-container:hover,
+.about-container:hover {
     cursor: default;
 }
+.about-container{
+    color: white;
+    width: fit-content;
+    align-self: flex-end;
+    text-align: right;
+    padding: 20px 30px;
+}
+
