@@ -1,8 +1,9 @@
+import createStore from "./store";
 
 
 function createHome() {
     const container = document.getElementById('container');
-
+    document.body.style.backgroundImage = "url('img/background.jpg')";
     const homeContainer = document.createElement('div');
     homeContainer.classList.add('home-container');
     homeContainer.setAttribute('id', 'home-container');
@@ -18,7 +19,10 @@ function createHome() {
 
     const button = document.createElement('button');
     button.classList.add('home-button');
-    button.textContent = 'Visit Store';
+    button.textContent = 'Go to Store';
+    button.addEventListener('click', () => {
+        createStore();
+    });
 
     homeContainer.appendChild(title);
     homeContainer.appendChild(text);
