@@ -2,7 +2,7 @@
 
 function createAbout() {
     const container = document.getElementById('container');
-
+    document.body.style.backgroundImage = "url('img/about-background.jpg')";
     const aboutContainer = document.createElement('div');
     aboutContainer.classList.add('about-container');
     aboutContainer.setAttribute('id', 'about-container');
