@@ -1,5 +1,6 @@
 import createHome from "./home";
 import createAbout from "./about";
+import createStore from "./store";
 
 function createHeader() {
     const header = document.createElement('header');
@@ -21,7 +22,6 @@ function navBar() {
     home.setAttribute('id', 'home-button');
     home.textContent = 'Home';
     home.addEventListener('click',()=>{
-        document.body.style.backgroundImage = "url('img/background.jpg')";
         createHome();
     });
 
@@ -30,14 +30,16 @@ function navBar() {
     about.setAttribute('id', 'about-button');
     about.textContent = 'About';
     about.addEventListener('click',()=>{
-        document.body.style.backgroundImage = "url('img/about-background.jpg')";
         createAbout();
-    })
+    });
 
     const store = document.createElement('button');
     store.classList.add('nav-button');
     store.setAttribute('id', 'store-button');
     store.textContent = 'Store';
+    store.addEventListener('click',()=>{
+        createStore();
+    });
 
     const contact = document.createElement('button');
     contact.classList.add('nav-button');
