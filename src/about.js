@@ -1,5 +1,3 @@
-
-
 function createAbout() {
     const container = document.getElementById('container');
     document.body.style.backgroundImage = "url('img/about-background.jpg')";
@@ -18,18 +16,11 @@ function createAbout() {
                     We couldn't find a decent coffee to enjoy.<br>
                     So we said, "Fine, we'll do it ourselves."`;
 
-
     aboutContainer.appendChild(title);
     aboutContainer.appendChild(text);
  
-
     container.innerHTML = '';
     container.appendChild(aboutContainer);
-
 };
 
 export default createAbout;
-
-
-
-
