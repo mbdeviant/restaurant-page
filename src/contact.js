@@ -13,7 +13,7 @@ function createContact() {
     text.classList.add('home-text');
     text.innerHTML = `Currently, we do all the marketing online. <br>
                      If you'd like to contact us,<br> here's our mail address and phone number.<br>
-                     coffewcoffee@loremipsum.com <br>
+                     coffeewcoffee@loremipsum.com <br>
                      +1327 7777 47`;
     const ps = document.createElement('p');
     ps.classList.add('ps');
