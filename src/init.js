@@ -1,6 +1,7 @@
 import createHome from "./home";
 import createAbout from "./about";
 import createStore from "./store";
+import createContact from "./contact";
 
 function createHeader() {
     const header = document.createElement('header');
@@ -10,6 +11,9 @@ function createHeader() {
     title.textContent = 'coffee&coffee';
     header.appendChild(title);
     header.appendChild(navBar());
+    title.addEventListener('click',()=>{
+        createHome();
+    });
 
     return header;
 }
@@ -45,6 +49,9 @@ function navBar() {
     contact.classList.add('nav-button');
     contact.setAttribute('id', 'contact-button');
     contact.textContent = 'Contact';
+    contact.addEventListener('click', ()=>{
+        createContact();
+    });
 
     nav.appendChild(home);
     nav.appendChild(about);
@@ -52,27 +59,17 @@ function navBar() {
     nav.appendChild(contact);
 
     return nav;
-}
+};
 
 function createContainer (){
     const container = document.createElement('div');
     container.setAttribute('id', 'container');
-
     return container;
-}
-
+};
 
 export default function pageLoad() {
-    const content = document.getElementById('content');
-    
+    const content = document.getElementById('content');    
     content.appendChild(createHeader());
     content.appendChild(createContainer());
-    createHome();
-    
-}
-
-
-
-
-
-
+    createHome();   
+};
