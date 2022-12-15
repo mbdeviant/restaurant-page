@@ -1,6 +1,5 @@
 import createStore from "./store";
 
-
 function createHome() {
     const container = document.getElementById('container');
     document.body.style.backgroundImage = "url('img/background.jpg')";
@@ -31,7 +30,5 @@ function createHome() {
     container.innerHTML = '';
     container.appendChild(homeContainer);
 };
-
-
 
 export default createHome;
