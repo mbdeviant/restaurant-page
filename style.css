@@ -9,7 +9,8 @@ body {
     background-size: cover;
     transition: all 0.3s;
 }
-#container{
+
+#container {
     display: flex;
     flex-direction: column;
 }
@@ -111,22 +112,24 @@ nav {
 .contact-container:hover {
     cursor: default;
 }
-.about-container{
+
+.about-container {
     color: white;
     width: fit-content;
     align-self: flex-end;
     text-align: right;
     padding: 20px 30px;
 }
-.store-container{
+
+.store-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     margin-top: 50px;
     padding: 0 20px;
-    
 }
-.item-container{
+
+.item-container {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -137,27 +140,52 @@ nav {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     color: white;
+    transition: 0.3s;
 }
-.item-container:hover{
-    cursor: pointer;
+
+.item-container:hover {
+    scale: 1.02;
 }
 
 .store-item-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
     font-size: 20px;
 }
+
 .store-item-text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: default;
     margin-top: 4px;
     font-size: 20px;
     font-weight: 400;
 }
-.store-item-img{
+
+.store-item-img {
     border: 1px solid white;
-    width:250px;
+    width: 250px;
     border-radius: 10px;
 }
-.contact-container{
+
+.store-item-button {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    margin-top: 7px;
+    padding: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+
+.store-item-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.contact-container {
     color: white;
     width: fit-content;
     margin-top: 50px;
@@ -166,7 +194,8 @@ nav {
     text-align: right;
     padding: 20px 30px;
 }
-.ps{
+
+.ps {
     font-size: 13px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
