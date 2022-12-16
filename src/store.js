@@ -41,7 +41,7 @@ function createItem(title, text) {
 
     const itemButton = document.createElement('button');
     itemButton.classList.add('store-item-button');
-    itemButton.textContent = 'Purchase';
+    itemButton.textContent = 'BUY NOW';
 
     itemContainer.appendChild(img);
     itemContainer.appendChild(itemTitle);
