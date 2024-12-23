@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('img/background.jpg');
+    background-image: url("img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     transition: all 0.3s;
@@ -24,8 +24,9 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header>h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.header > h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     font-size: 50px;
     color: white;
 }
@@ -102,7 +103,7 @@ nav {
 }
 
 .home-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 40px;
     font-weight: 400;
 }
@@ -154,7 +155,7 @@ nav {
 }
 
 .store-item-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     cursor: default;
     margin-top: 4px;
     font-size: 20px;
@@ -175,7 +176,7 @@ nav {
     color: white;
     margin-top: 7px;
     padding: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.2s;
 }
 
@@ -197,5 +198,5 @@ nav {
 
 .ps {
     font-size: 13px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
